@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Ensure hooks directory exists
+mkdir -p .git/hooks
+
+# Copy pre-commit hook
+cp .githooks/pre-commit .git/hooks/pre-commit
+
+# Make sure it's executable
+chmod +x .git/hooks/pre-commit
